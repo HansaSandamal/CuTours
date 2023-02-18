@@ -1,7 +1,10 @@
 import React from "react";
+import Gallery from "../../components/Gallery/Gallery";
 
 function HomeView() {
-  return <h1>Home Page</h1>;
+  return(<Gallery/>)
+    
+   
 }
 
 export default HomeView;

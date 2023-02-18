@@ -1,7 +1,8 @@
 import React from "react";
+import Map from "../../components/Map/Map";
 
 function ContactView() {
-  return <h1>Contact Page</h1>;
+  return(<Map/>);
 }
 
 export default ContactView;

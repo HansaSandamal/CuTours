@@ -1,6 +1,8 @@
 import React from "react";
 import {Nav, Navbar, Container} from 'react-bootstrap'
+
 import './_header.css';
+import logo from '../../assets/images/magnet.png'
 
 
 function Header () {
@@ -8,11 +10,12 @@ function Header () {
     <Navbar expand="lg" className="navbar">
       <Container>
         <Navbar.Brand href="/" className="brand">
-          Cu day tours
+          <img src={logo} className="logo" />
+          <span className="company-name">Cu day tours</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto  ml-auto">
             <Nav.Link href="/" className="link">
               Home
             </Nav.Link>
