@@ -10,7 +10,7 @@ function Header () {
     <Navbar expand="lg" className="navbar">
       <Container>
         <Navbar.Brand href="/" className="brand">
-          <img src={logo} className="logo" />
+          <img src={logo} alt="logo" className="logo" />
           <span className="company-name">Cu day tours</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

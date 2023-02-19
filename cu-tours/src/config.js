@@ -1,0 +1,1 @@
+export const clientDomain = "https://www.facebook.com/KollangeHadawath";

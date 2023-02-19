@@ -8,6 +8,7 @@ import Header from './layouts/Header/Header';
 import HomeView from './views/HomeView/HomeView';
 import AboutView from './views/AboutView/AboutView';
 import ContactView from './views/ContactView/ContactView';
+import DestinationsView from './views/DestinationsView/DestinationsView';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/" element={<HomeView/>} />
         <Route path="/about" element={<AboutView/>} />
         <Route path="/contact" element={<ContactView/>} />
+        <Route path="/destinations" element={<DestinationsView/>} />
       </Routes>
     </BrowserRouter>
     </div>

@@ -16,7 +16,7 @@ const Gallery = () => {
           className="d-block w-100"
           src={slide1}
           alt="First slide"
-          style={{ height: "600px" }}
+          style={{ height: "800px" }}
         />
         <Carousel.Caption>
           <h3>First slide label</h3>
@@ -28,7 +28,7 @@ const Gallery = () => {
           className="d-block w-100"
           src={slide2}
           alt="Second slide"
-          style={{ height: "600px" }}
+          style={{ height: "800px" }}
         />
         <Carousel.Caption>
           <h3>Second slide label</h3>
@@ -40,7 +40,7 @@ const Gallery = () => {
           className="d-block w-100"
           src={slide3}
           alt="Third slide"
-          style={{ height: "600px" }}
+          style={{ height: "800px" }}
         />
         <Carousel.Caption>
           <h3>Third slide label</h3>
