@@ -1,6 +1,8 @@
  .home-view {
     background-color: #1f7a8c; 
     animation: fade-in 1s ease-out;
+    height: auto; 
+    overflow: auto; 
   }
   
   @keyframes fade-in {
@@ -11,4 +13,5 @@
       opacity: 1;
     }
   }
+  
   

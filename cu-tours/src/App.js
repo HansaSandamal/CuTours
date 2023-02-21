@@ -9,6 +9,7 @@ import HomeView from './views/HomeView/HomeView';
 import AboutView from './views/AboutView/AboutView';
 import ContactView from './views/ContactView/ContactView';
 import DestinationsView from './views/DestinationsView/DestinationsView';
+import Footer from './layouts/Footer/Footer';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/destinations" element={<DestinationsView/>} />
       </Routes>
     </BrowserRouter>
+    <Footer/>
     </div>
   );
 }

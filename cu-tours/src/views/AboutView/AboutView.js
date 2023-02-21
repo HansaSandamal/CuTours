@@ -1,11 +1,16 @@
 import React from "react";
-import { Row, Col } from 'react-bootstrap';
-import adress from "../../assets/images/adress.png"
-import "./_aboutView.css"
+import { Row, Col } from "react-bootstrap";
+
+import address from "../../assets/images/address.png";
+import message from "../../assets/images/message.png";
+import contact from "../../assets/images/contact.png";
+import "./_aboutView.css";
 
 function AboutView() {
   function handleViewOnLargeMapClick() {
-    window.open("https://www.google.com/maps/place/6%C2%B005'15.1%22N+80%C2%B008'46.5%22E/@6.087536,80.1456938,19z/data=!3m1!4b1!4m5!3m4!1s0x0:0x3b2e9b79e96afd1!8m2!3d6.087536!4d80.146241");
+    window.open(
+      "https://www.google.com/maps/place/6%C2%B005'15.1%22N+80%C2%B008'46.5%22E/@6.087536,80.1456938,19z/data=!3m1!4b1!4m5!3m4!1s0x0:0x3b2e9b79e96afd1!8m2!3d6.087536!4d80.146241"
+    );
   }
   return (
     <Row className="no-gutters">
@@ -18,13 +23,27 @@ function AboutView() {
         />
       </Col>
       <Col md={6} className="address-col">
-      <div className="container">
-          <img src={adress} alt="Address" className="address-img" />
-          <a href="#" onClick={handleViewOnLargeMapClick}>Add address here-View on Large Map</a>
+        <div className="container">
+          <ul className="contact-list">
+            <li>
+              <img src={address} alt="Address" className="address-img" />
+              <a href="#" onClick={handleViewOnLargeMapClick}>
+                Add address here-View on Large Map
+              </a>
+            </li>
+            <li>
+              <img src={message} alt="Address" className="address-img" />
+              <a href="mailto:udara5050@gmail.com?subject=Hello">udara5050@gmail.com</a>
+            </li>
+            <li>
+              <img src={contact} alt="Address" className="address-img" />
+              <a href="tel:+94703222894">+94703222894</a>
+            </li>
+          </ul>
         </div>
       </Col>
     </Row>
-  )
+  );
 }
 
 export default AboutView;

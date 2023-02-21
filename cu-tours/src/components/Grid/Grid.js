@@ -27,11 +27,11 @@ const images = [
 const Grid = () => {
     console.log("grid view")
   return (
-    <Container>
+    <Container className="grid-container">
       <Row className="justify-content-center">
         {images.map((image, index) => (
           <Col xs={12} md={4} lg={3} key={index} className="image-col">
-            <div className="image-container">
+            <div className="image-container-grid">
               <img src={image.src} alt={image.alt} className="img-fluid" />
             </div>
           </Col>

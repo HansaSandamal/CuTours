@@ -1,0 +1,46 @@
+
+.footer-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .footer-container > .container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .list-inline.contact {
+    margin-bottom: 20px;
+  }
+    
+  .list-inline li a {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .list-inline li a:hover {
+    color: #fff;
+    transform: rotate(360deg);
+  }
+  
+  .animated {
+    animation-duration: 2s;
+    animation-name: slideInDown;
+    background-color: #bfdbf7;
+  }
+  
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-100%);
+    }
+  
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .text-md-left {
+      text-align: center !important;
+    }
+  }  

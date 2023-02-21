@@ -20,9 +20,9 @@ const DestinationsView = () => {
   const handleClose = () => {
     setActiveImage(null);
   };
-console.log("sds")
   return (
-    <Container>
+    <div style={{ height: "100%", overflow: "auto", backgroundColor: "#bfdbf7" }}>
+    <Container className="container-destinations">
       <Row className="justify-content-center">
         {images.map((image, index) => (
           <Col xs={6} md={4} lg={3} key={index} className="image-col">
@@ -48,6 +48,7 @@ console.log("sds")
         </div>
       )}
     </Container>
+    </div>
   );
 };
 
