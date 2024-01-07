@@ -1,0 +1,13 @@
+ 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  * {
+    box-sizing: initial;
+  }
+}
+
